@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang Cuu CHuong</title>
+</head>
+<body>
+    <h2>Bang cuu chuong</h2>
+
+    <script>
+        let i, j;
+        let sout = '<table border="1" width="400" cellspacing="0" cellPadding="15">';
+        for (i=1;i<=10;i++) {
+            sout += '<tr>';
+            for (j=1;j<=10;j++) {
+                sout += '<td>' + i + '*' + j + '=' + i*j + '</td>'
+            }
+            sout += '</tr>';
+            j=1;
+            i++;
+        }
+        sout += '</table>';
+        document.write(sout);
+
+    </script>
+</body>
+</html>
