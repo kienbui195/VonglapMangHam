@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hien thi cac so nguyen to dau tien</title>
+</head>
+<body>
+    <script>
+        let N = +prompt('Nhap so so nguyen to in ra: ');
+        let dem = 0, n = 1;
+           do {
+               let flag = true;
+               n++ ;
+                   if (n < 2){
+                       flag = false;
+                   } else {
+                       for (let i = 2; i < n - 1;i++) {
+                           if (n % i === 0){
+                               flag = false;
+                           }
+                       }
+                   }
+                   if (flag){
+                      document.write(n)
+                       dem++;
+                   }
+           } while (dem < N);
+    </script>
+
+</body>
+</html>
