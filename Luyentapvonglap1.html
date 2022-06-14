@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="button" onclick="trochoi()">Choi</button>
+    <script>
+        /*let i = 0, count = 0 ;
+        for (; i < 100; i++) {
+            console.log(i+1);
+            if (i+1 === 99 ) {
+                alert('Hoan thanh');
+                break;
+            }
+        }*/ //bai 1: dem tu  den 100, den 99 thi in ra thong bao hoan thanh
+
+        /*var nhietdo;
+        do {
+            nhietdo = +prompt('Nhap nhiet do:');
+            if (nhietdo > 100) {
+                alert('Hay giam nhiet do!');
+                continue;
+            } if (nhietdo < 20) {
+                alert('Hay tang nhiet do!');
+                continue;
+            }
+        } while (nhietdo > 100 || nhietdo < 20);*/ //Bai2
+
+        /*var a = 0, b =1, c;
+        document.write("20 so dau tien trong day fibonacci: ");
+        for ( let i = 1; i <= 20; i++) {
+            document.write(a + ' ');
+            c = a + b;
+            a = b;
+            b = c;
+        }*/ //Bai3L: in ra 20 so dau tien trong day fibonacci
+
+        /*var a = 0, b =1, c, i = 0;
+        document.write("day fibonacci: ");
+        do {
+            document.write(a + ' ');
+            c = a + b;
+            a = b;
+            b = c;
+            if (a % 5 === 0) {
+                document.write( a + '<br>' +'Trong do so ' + a + ' chia het cho 5');
+                break;
+            } else {
+                i++;
+            }
+        } while (i>0);*/ //B4: in ra so fibonacci dau tien trong day chia het cho 5
+
+        /*var a = 0, b =1, c, i = 0, sum = 0;
+        document.write("day fibonacci: ");
+        for (;i < 20; i++) {
+            document.write(a + ' ');
+            c = a + b;
+            a = b;
+            b = c;
+            sum += a;
+        }
+        document.write('<br>' + 'Tong 20 so fibonacci dau tien la = ' + sum);*/ //Bai5: tinh tong 20 so fibonacci dau tien
+
+        /*var sum = 0, n = 1, dem = 0;
+        do {
+            if (n%7 === 0) {
+                sum += n;
+                dem++;
+            }
+            n++;
+        } while (dem < 30);
+        document.write('Tong 30 so tu nhien lon hon 0 dau tien: ' + sum);*/ //Bai6: tinh tong 30 so tu nhien lon hon 0 chi het cho 7 dau tien
+
+        /*var  hienthi = '';
+        for (var i = 1; i <= 100; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                hienthi = ' FizzBuzz ';
+                continue;
+            } if (i % 5 === 0) {
+                hienthi = ' Buzz ';
+                continue;
+            } if (i%3 === 0) {
+                hienthi = ' Fizz ';
+                continue;
+            }
+            document.write(hienthi + i + ' ');
+        }*/ //Bai7: in ra day so
+
+        function trochoi() {
+            var so = +prompt('Doan trong khoang?');
+            var soan = Math.floor(Math.random()*so);
+            var i = 0;
+            do {
+                i++
+                var sodoan = +prompt('User doan so:');
+                if (soan === sodoan) {
+                    alert('CHuc mung chien thang!');
+                    break;
+                }
+                else continue;
+            } while (i>0);
+        } //Tro choi doan xem
+
+
+    </script>
+</body>
+</html>
