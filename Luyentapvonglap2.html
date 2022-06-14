@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*var so = +prompt('Nhap vao so nguyen duong N:');
+    let giaithua = 1;
+        if (so <= 0 ) {
+            alert('Ban da nhap sai');
+        }
+        else {
+            for (let j = 1; j <= so ; j++) {
+                giaithua *= j;
+                console.log(giaithua);
+            }
+        }
+        alert(so +'! = ' + giaithua);*/ //bai 2 tinh giai thua
+
+    /*let i, j;
+    for (i = 0; i < 5; i++) {
+        for (j = 0 ; j <= i; j++) {
+            document.write('*');
+        }
+        document.write('<br/>');
+    }
+    for (let a = 0; a < 5; a++) {
+        for ( let b = 5 ; b > a; b--) {
+            document.write('*');
+        }
+        document.write('<br/>');
+    }*/ //Bai 3 ve tam giac
+
+    /*let cr = +prompt('Nhap chieu rong hcn:');
+    let cd = +prompt('Nhap chieu dai hcn:');
+    for (let j = 0 ; j < cd; j++ ) {
+        document.write('*');
+    }
+    document.write('<br>');
+    for (let i = 0 ; i < cr -2 ; i++) {
+        document.write('*');
+        for (let z = 0 ; z < cd -2; z++) {
+            document.write('&ensp;');
+        }
+        document.write('*');
+        document.write('<br/>');
+    }
+    for (let a = 0 ; a < cd; a++ ) {
+        document.write('*');
+    }*/ //Bai 4 ve hcn
+
+    let interestnth = parseInt(), interestn1th = parseInt();
+    let beginmoney = +prompt("Nhap so tien ban dau:");
+    let month = +prompt('SO thang cho vay');
+    let interestrate = +prompt('Lai suat hang thang:');
+    let interestmonth = beginmoney*interestrate;
+    for (let i = 1 ; i <= month ; i ++) {
+        interestn1th = interestrate*(beginmoney+interestmonth);
+        interestnth = interestrate*(beginmoney+interestn1th);
+    }
+    document.write("so tien lai sau " + month + " thang la: " + interestnth); //Bai 5 tinh lai suat hang thang
+
+
+
+</script>
+</body>
+</html>
