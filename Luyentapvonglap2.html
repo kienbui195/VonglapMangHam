@@ -19,19 +19,43 @@
         }
         alert(so +'! = ' + giaithua);*/ //bai 2 tinh giai thua
 
-    /*let i, j;
+    /*let i, j,z;
     for (i = 0; i < 5; i++) {
-        for (j = 0 ; j <= i; j++) {
+    for (j = 0 ; j < i; j++) {
+        document.write('&ensp;');
+    }
+    for (z=0; z < 5 - j;z++) {
+        document.write('*');
+    }
+    document.write('<br/>');
+     }
+
+let i, j;
+for (i = 0; i < 5; i++) {
+    for (j = 0 ; j <= i; j++) {
+        document.write('*');
+    }
+    document.write('<br/>');
+}
+
+ let i, j, z;
+    for (i = 0; i < 5; i++) {
+        for (j = 4; j > i; j--) {
+            document.write('&ensp;');
+        }
+        for (z = 0; z<=i ; z++) {
             document.write('*');
         }
         document.write('<br/>');
     }
-    for (let a = 0; a < 5; a++) {
-        for ( let b = 5 ; b > a; b--) {
-            document.write('*');
-        }
-        document.write('<br/>');
-    }*/ //Bai 3 ve tam giac
+
+let a, b;
+for (let a = 0; a < 5; a++) {
+    for ( let b = 5 ; b > a; b--) {
+        document.write('*');
+    }
+    document.write('<br/>');
+}*/ //Bai 3 ve tam giac
 
     /*let cr = +prompt('Nhap chieu rong hcn:');
     let cd = +prompt('Nhap chieu dai hcn:');
@@ -51,7 +75,7 @@
         document.write('*');
     }*/ //Bai 4 ve hcn
 
-    let interestnth = parseInt(), interestn1th = parseInt();
+    /*let interestnth = parseInt(), interestn1th = parseInt();
     let beginmoney = +prompt("Nhap so tien ban dau:");
     let month = +prompt('SO thang cho vay');
     let interestrate = +prompt('Lai suat hang thang:');
@@ -60,7 +84,9 @@
         interestn1th = interestrate*(beginmoney+interestmonth);
         interestnth = interestrate*(beginmoney+interestn1th);
     }
-    document.write("so tien lai sau " + month + " thang la: " + interestnth); //Bai 5 tinh lai suat hang thang
+    document.write("so tien lai sau " + month + " thang la: " + interestnth);*/ //Bai 5 tinh lai suat hang thang
+
+
 
 
 
