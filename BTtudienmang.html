@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p><input type="text" id="input" placeholder="car or rice"><button onclick="search()" >Tim Kiem</button></p>
+    <div id="result"></div>
+
+    <script>
+        let Enword = ['car','rice'];
+        let Viword = ['oto', 'com'];
+        function search() {
+            let input = document.getElementById('input').value;
+            for (let i = 0; i < Enword.length; i++) {
+                if (input === Enword[i]) {
+                    document.getElementById('result').innerHTML = Viword[i];
+                    break;
+                }
+                else {
+                    document.getElementById('result').innerHTML = 'Khong co tu nao de hien thi'
+                }
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
