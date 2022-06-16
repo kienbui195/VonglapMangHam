@@ -5,6 +5,120 @@
     <title>Title</title>
 </head>
 <body>
+    <script>
+        /*let array = [];
+        let count = 0;
+        for (let i = 0; i < 10; i++) {
+            array[i] = +prompt('Nhap gia tri phan tu cho mang x[' + i + ']= ');
+        }
+        document.write('array = [' + array +']');
+        for (const arrayElement of array) {
+            if (Number.isInteger(arrayElement) && arrayElement >=10) {
+                count++;
+            }
+        }
+        document.write('<br/>' +'Co ' + count + ' so nguyen lon hon hoac bang 10');
 
+
+        let max = array[0]; let position;
+        array.forEach(function (value,index) {
+          if (value > max) {
+              max = value;
+             position = index;
+          }
+        });
+        document.write('<br/>' + "Gia tri lon nhat trong mang:" + max + "vi tri: " + position);*/ //bai 1 + 2
+
+
+
+        /*let n = +prompt('nhap do dai mang');
+        let x =[]; let max = 0, TB = 0, position, count = 0;
+        let sum = 0;
+        for (i = 0; i < n; i++) {
+            x[i] = +prompt('x['+ i + ']= ');
+        }
+        document.write('x = [' + x + ']');
+        max = x[0];
+        x.forEach(function (value,index) {
+            if (value > max) {
+                max = value;
+                position = index;
+            }
+        });
+        document.write('<br/>' + 'Max = ' + max + ' Vi tri thu ' + position + ' trong mang');
+        for (const valueElement of x) {
+            sum += valueElement;
+        }
+        TB = sum/x.length;
+        document.write('<br/>' +'Gia tri trung binh cac phan tu = ' + TB);
+
+        let y=[];
+        y = x.reverse()
+        document.write('<br/>' + 'y = [' + y + ']');
+
+        for (const yElement of y) {
+            if (Number.isInteger(yElement) && yElement<0) {
+                count++;
+            }
+        }
+        document.write('<br/>' + 'Mang y co : ' + count + ' so nguyen am');
+
+        let v = +prompt('nhap V:'); let dem=0;
+        for (const yElement of y) {
+            if (v === yElement) {
+                dem++;
+            }
+        }
+        if (dem > 0) {
+            document.write('<br/>' + 'v co trong mang');
+        } else  document.write('<br/>' + 'v ko co trong mang');*/ //bai 3 4 5 6
+
+
+
+        /*let x = [], y = [], positionx, flag = false;
+        let count = 0;
+        for (let i = 0; i < 10; i++) {
+            x[i] = +prompt('Nhap gia tri phan tu cho mang x[' + i + ']= ');
+        }
+        document.write('array = [' + x +']');
+        v = +prompt('Nhap v:');
+        x.forEach(function (value,index) {
+            if (value === v) {
+                flag = true;
+                positionx = index;
+                for (i = positionx; i < x.length; i++) {
+                    x[i] = x[i + 1];
+                }
+            }
+        });
+        document.write('<br/>' + 'xoa v khoi mang x nhan duoc x = [' + x + ']' );*/ //bai 7
+
+
+
+        /*let x = [], min = 0, min1, min2; let y = [];
+        for (let i= 0; i < 10; i++) {
+            x[i] = +prompt('Nhap x[' + i + ']= ');
+        }
+        document.write('<br/>' + 'x=[' + x + ']');
+        x.sort(function(a,b) {   //ham so sanh su dung sort() de sap xep mang theo thu tu
+            if (a > b) return -1;
+            if (a < b) return 1;
+            return 0;
+        });
+        document.write('<br/>' + 'x = [' + x + ']');*/ //bai 7
+
+
+
+        let a = [], b = [], c= [];
+        for (let i= 0; i < 10; i++) {
+            a[i] = +prompt('Nhap a[' + i + ']= ');
+        }
+        for (let j= 0; j < 10; j++) {
+            b[j] = +prompt('Nhap b[' + j + ']= ');
+        }
+        c = a.concat(b);
+        console.log(c); //bai 8
+
+    </script>
 </body>
 </html>
